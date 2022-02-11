@@ -4,10 +4,10 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SistemaContable.Vistas.V_Registro"
              NavigationPage.HasNavigationBar="True"
              NavigationPage.IconColor="White"
-             Title="Registrar Usuario">
+             Title="Registrar Usuario"
+             x:Class="SistemaContable.Vistas.V_Registro">
     
     <StackLayout>
         
@@ -23,9 +23,6 @@
         <Grid RowSpacing="25">
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
@@ -112,10 +109,10 @@
                     Text="Registrarme"
                     TextColor="White"
                     FontAttributes="Bold"
-                    BackgroundColor="#362DFD">                    
+                    BackgroundColor="#362DFD"
+                    x:Name="btnRegistrar">
                 </Button>
             </StackLayout>
-
         </Grid>
         
         

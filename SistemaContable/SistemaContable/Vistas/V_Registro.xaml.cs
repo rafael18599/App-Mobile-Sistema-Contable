@@ -17,6 +17,12 @@ namespace SistemaContable.Vistas
             InitializeComponent();
             var navigationPage = Application.Current.MainPage as NavigationPage;
             navigationPage.BarBackgroundColor = Color.FromRgb(45, 140, 253);
+            btnRegistrar.Clicked += Registrar_Clicked;
+        }
+
+        private void Registrar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new V_Login());
         }
     }
 }

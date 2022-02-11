@@ -576,3 +576,8 @@ C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\Sistema
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\chanchito.png
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\icons.png
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\pnglol.png
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\splashscreen.xml
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\android\src\crc644fed32c5c8904434\SpashActivity.java
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\android\src\crc644fed32c5c8904434\SplashActivity.java
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\logo.png
