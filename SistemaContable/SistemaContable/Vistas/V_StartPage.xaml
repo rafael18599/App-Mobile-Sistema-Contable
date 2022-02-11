@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SistemaContable.Vistas.V_StartPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <StackLayout>
+        
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="#2d8cfd"  />
+                    <GradientStop Offset="1" Color="#22c3a1" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+        
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" Orientation="Vertical">
+            <Label
+                Text="¡Bienvenido a nuestro Sistema Contable!"
+                TextColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="Transparent"
+                WidthRequest="200"
+                HeightRequest="150">
+            </Label>
+
+            <StackLayout BackgroundColor="Transparent" Orientation="Vertical">
+                <Button
+                        Text="Iniciar Sesión"
+                        BackgroundColor="#362DFD"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Margin="0,30,0,0"
+                        x:Name="btnLogin">
+                </Button>
+            </StackLayout>
+            
+            <StackLayout BackgroundColor="Transparent" Orientation="Vertical">
+                <Button
+                        Text="Registrarme"
+                        BackgroundColor="#362DFD"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        Margin="0,30,0,0"
+                        x:Name="btnRegistro">
+                </Button>
+            </StackLayout>
+
+        </StackLayout>
+        <StackLayout BackgroundColor="Transparent" VerticalOptions="End" Orientation="Vertical" HorizontalOptions="Center">
+            <Image
+                Source="iconS.png"
+                Margin="0,10,0,10"
+                BackgroundColor="Transparent">
+            </Image>
+            <Label
+                Text="Created by Rafael Bojorquez, All Rights Reserved."
+                TextColor="Black"
+                FontAttributes="None"
+                FontSize="13"
+                HorizontalOptions="Center"
+                VerticalOptions="End">
+            </Label>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
