@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="True"
+             NavigationPage.IconColor="White"
+             Title="Iniciar Sesión"
+             x:Class="SistemaContable.Vistas.V_Login">
+    <StackLayout>
+
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="#2d8cfd"  />
+                    <GradientStop Offset="1" Color="#22c3a1" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <Grid RowSpacing="25">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                <Label
+                    Text="LOGIN"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="25">
+                </Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                <Label
+                    Text="E-mail:"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="275"
+                    HeightRequest="45"
+                    TextColor="White"
+                    HorizontalTextAlignment="Start"
+                    FontSize="20"
+                    FontAttributes="Bold">
+                </Label>
+                <Entry
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Keyboard="Text"
+                    WidthRequest="275"
+                    HeightRequest="45"
+                    TextColor="White"
+                    PlaceholderColor="White"
+                    MaxLength="40"
+                    HorizontalTextAlignment="Start"
+                    Text="{Binding txtEmail,Mode=TwoWay}">
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center">
+                <Label
+                    Text="Contraseña:"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="275"
+                    HeightRequest="45"
+                    TextColor="White"
+                    HorizontalTextAlignment="Start"
+                    FontSize="20"
+                    FontAttributes="Bold">
+                </Label>
+                <Entry
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Keyboard="Text"
+                    WidthRequest="275"
+                    HeightRequest="45"
+                    TextColor="White"
+                    PlaceholderColor="White"
+                    MaxLength="20"
+                    HorizontalTextAlignment="Start"
+                    IsPassword="True"
+                    Text="{Binding txtContraseña,Mode=TwoWay}">
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" HorizontalOptions="Center">
+                <Button
+                    Text="Iniciar Sesión"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    BackgroundColor="#362DFD"
+                    x:Name="btnLogin"
+                    Command="{Binding loginCommand}">
+                </Button>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>

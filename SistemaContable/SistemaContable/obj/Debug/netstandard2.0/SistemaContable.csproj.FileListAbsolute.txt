@@ -6,7 +6,6 @@ C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\Sistema
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\SistemaContable.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Vistas\V_StartPage.xaml.g.cs
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\SistemaContable.AssemblyInfoInputs.cache
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\SistemaContable.AssemblyInfo.cs
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\SistemaContable.csproj.CoreCompileInputs.cache
@@ -14,5 +13,7 @@ C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\Sistema
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\SistemaContable.dll
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\ref\SistemaContable.dll
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\SistemaContable.pdb
-C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Vistas\V_Login.xaml.g.cs
-C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Vistas\V_Registro.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_Login.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_Registro.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_StartPage.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\ViewModels\V_Inicio.xaml.g.cs
