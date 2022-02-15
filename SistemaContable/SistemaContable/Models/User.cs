@@ -13,5 +13,9 @@ namespace SistemaContable.Models
         public string Apellido { get; set; }
         public string Email { get; set; }
         public string Contraseña { get; set; }
+        public float Ahorro { get; set; }
+        public float Sueldo { get; set; }
+        public float Gasto{ get; set; }
+        public string DescGasto { get; set; }
     }
 }

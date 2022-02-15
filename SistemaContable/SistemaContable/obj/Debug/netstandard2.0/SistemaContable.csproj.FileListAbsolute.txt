@@ -16,4 +16,7 @@ C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\Sistema
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_Login.xaml.g.cs
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_Registro.xaml.g.cs
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_StartPage.xaml.g.cs
-C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\ViewModels\V_Inicio.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_Inicio.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_Ahorro.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_EstadoCuenta.xaml.g.cs
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable\obj\Debug\netstandard2.0\Views\V_TipoCambio.xaml.g.cs

@@ -17,6 +17,8 @@ namespace SistemaContable.Vistas
         {
             InitializeComponent();
             BindingContext = new VM_Login();
+            var navigationPage = Application.Current.MainPage as NavigationPage;
+            navigationPage.BarBackgroundColor = Color.FromRgb(45, 140, 253);
         }
     }
 }

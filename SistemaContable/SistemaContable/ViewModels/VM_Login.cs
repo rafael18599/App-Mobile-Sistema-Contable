@@ -39,6 +39,7 @@ namespace SistemaContable.ViewModels
         }
         #endregion
 
+        #region Commands
         private async void LoginCommand()
         {
             if (string.IsNullOrEmpty(this.txtEmail))
@@ -52,16 +53,18 @@ namespace SistemaContable.ViewModels
                 return;
             }
             List<User> e = App.Database.getUserLogin(txtEmail, txtContraseña).Result;
-            if(e.Count != 0)
+            if (e.Count != 0)
             {
+                var user = e[0];
                 await App.Current.MainPage.DisplayAlert("Exito", "Sesión Iniciada Correctamente", "Aceptar");
-                await App.Current.MainPage.Navigation.PushAsync(new V_Inicio());
+                await App.Current.MainPage.Navigation.PushAsync(new V_Inicio(user));
             }
             else
             {
                 await App.Current.MainPage.DisplayAlert("Error", "Ingrese Email y constraseña correctamente", "Aceptar");
             }
-        }
+        } 
+        #endregion
 
     }
 }

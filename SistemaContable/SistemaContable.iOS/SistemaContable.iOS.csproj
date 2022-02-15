@@ -151,4 +151,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\Logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\exchange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\wallet.png" />
+  </ItemGroup>
 </Project>

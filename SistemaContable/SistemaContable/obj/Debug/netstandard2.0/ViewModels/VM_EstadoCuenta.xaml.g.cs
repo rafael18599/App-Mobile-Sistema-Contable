@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SistemaContable.ViewModels.V_Inicio.xaml", "ViewModels/V_Inicio.xaml", typeof(global::SistemaContable.ViewModels.V_Inicio))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SistemaContable.ViewModels.VM_EstadoCuenta.xaml", "ViewModels/VM_EstadoCuenta.xaml", typeof(global::SistemaContable.ViewModels.VM_EstadoCuenta))]
 
 namespace SistemaContable.ViewModels {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ViewModels\\V_Inicio.xaml")]
-    public partial class V_Inicio : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ViewModels\\VM_EstadoCuenta.xaml")]
+    public partial class VM_EstadoCuenta : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(V_Inicio));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(VM_EstadoCuenta));
         }
     }
 }

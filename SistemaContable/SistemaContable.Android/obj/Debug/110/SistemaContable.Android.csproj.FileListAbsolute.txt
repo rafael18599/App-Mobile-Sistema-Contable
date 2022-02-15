@@ -610,3 +610,7 @@ C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\Sistema
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\android\src\crc64e6bbec0cebca6418\ActivityBase.java
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\android\src\crc64e6bbec0cebca6418\DialogService_OnDismissListener.java
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\android\src\crc64eb2743c2f6ea027b\ObservableAdapter_1.java
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\user.png
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\exchange.png
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\salary.png
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\wallet.png

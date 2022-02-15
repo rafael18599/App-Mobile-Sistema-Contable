@@ -1,0 +1,8 @@
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\optimized\
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\SistemaContable.iOS.csproj.AssemblyReference.cache
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.iOS\obj\iPhone\Debug\SistemaContable.iOS.csproj.CoreCompileInputs.cache

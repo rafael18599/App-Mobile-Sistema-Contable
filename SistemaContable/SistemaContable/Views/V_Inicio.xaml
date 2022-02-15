@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SistemaContable.ViewModels.V_Inicio"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="#2d8cfd"  />
+                    <GradientStop Offset="1" Color="#22c3a1" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <Grid RowSpacing="25">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="1" HorizontalOptions="Start" Margin="10,0,0,10" BackgroundColor="Transparent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0">
+                        <Image Source="user.png" WidthRequest="40" HorizontalOptions="Start" VerticalOptions="Center"></Image>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label
+                                Text="Bienvenido:"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="25">
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="2">
+                        <Label
+                                Text="{Binding txtNombre}"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="25">
+                        </Label>
+                    </StackLayout>
+
+                </Grid>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                <Label
+                        Text="Selecciona una de nuestras opciones "
+                        TextColor="White"
+                        FontSize="20"
+                        FontAttributes="Bold">
+                </Label>
+            </StackLayout>
+        </Grid>
+        <StackLayout BackgroundColor="Transparent" Margin="15">
+            <ScrollView Orientation="Vertical" Padding="0,0,0,0">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="Transparent" HorizontalOptions="Start">
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Frame HasShadow="True" BackgroundColor="LightBlue" BorderColor="White">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding estadoCuentaCommand}"/>
+                                </Frame.GestureRecognizers>
+                                <StackLayout >
+                                    <Image Source="wallet.png" WidthRequest="100" ></Image>
+                                    <Label
+                                        Text="Estado de Cuenta"
+                                        TextColor="Black"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        HorizontalTextAlignment="Center"
+                                        WidthRequest="170">
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Frame HasShadow="True" BackgroundColor="LightBlue" BorderColor="White" >
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding AhorroCommand}"/>
+                                </Frame.GestureRecognizers>
+                                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                                    <Image Source="salary.png" WidthRequest="100" ></Image>
+                                    <Label
+                                        Text="Ahorro"
+                                        TextColor="Black"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        HorizontalTextAlignment="Center"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        WidthRequest="170">
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Frame HasShadow="True" BackgroundColor="LightBlue" BorderColor="White" >
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TipoCambioCommand}"/>
+                                </Frame.GestureRecognizers>
+                                <StackLayout>
+                                    <Image Source="exchange.png" WidthRequest="100" ></Image>
+                                    <Label
+                                        Text="Tipo de Cambio"
+                                        TextColor="Black"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        HorizontalTextAlignment="Center"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="CenterAndExpand"
+                                        WidthRequest="170">
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

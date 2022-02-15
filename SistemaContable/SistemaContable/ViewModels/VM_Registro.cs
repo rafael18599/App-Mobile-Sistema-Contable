@@ -78,7 +78,7 @@ namespace SistemaContable.ViewModels
                 Nombre = txtNombre.ToLower(),
                 Apellido = txtApellido.ToLower(),
                 Email = txtEmail.ToLower(),
-                Contraseña = txtEmail.ToLower()
+                Contraseña = txtContraseña.ToLower()
             };
             await App.Database.SaveUserAsync(user);
             await App.Current.MainPage.DisplayAlert("Listo", "Registro Exitoso", "Aceptar");

@@ -12,9 +12,10 @@ namespace SistemaContable.ViewModels
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class V_Inicio : ContentPage
     {
-        public V_Inicio()
+        public V_Inicio(Models.User user)
         {
             InitializeComponent();
+            BindingContext = new VM_Inicio(user);
         }
     }
 }
