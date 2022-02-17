@@ -9,6 +9,7 @@ using GalaSoft.MvvmLight.Command;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms;
 using SistemaContable.Views;
+using System.Threading.Tasks;
 
 namespace SistemaContable.ViewModels
 {
@@ -16,6 +17,7 @@ namespace SistemaContable.ViewModels
     {
         #region Atributos
         private string _nombre;
+        private double? _ahorro;
         private User _user;
         #endregion
 
@@ -25,6 +27,7 @@ namespace SistemaContable.ViewModels
             _user = new User();
             _user = user;
             _nombre = user.Nombre.ToUpper();
+            _ahorro = user.Ahorro;
         } 
         #endregion
 
@@ -32,6 +35,11 @@ namespace SistemaContable.ViewModels
         {
             get { return this._nombre; }
             set { SetValue(ref this._nombre, value); }
+        }
+        public double? txtAhorro
+        {
+            get { return this._ahorro; }
+            set { SetValue(ref this._ahorro, value); }
         }
 
         #region Commands
@@ -47,6 +55,10 @@ namespace SistemaContable.ViewModels
         {
             get { return new RelayCommand(TipoCambio); }
         }
+        public ICommand AgregarDineroCommand
+        {
+            get { return new RelayCommand(AgregarDinero); }
+        }
         #endregion
 
         #region Metodos
@@ -61,6 +73,22 @@ namespace SistemaContable.ViewModels
         private async void TipoCambio()
         {
             await App.Current.MainPage.Navigation.PushAsync(new V_TipoCambio(_user));
+        }
+        private async void AgregarDinero()
+        {
+            string result = await App.Current.MainPage.DisplayPromptAsync("Dinero Actual","Ingrese su dinero actual","OK","Cancel","Dinero",10);
+            if (!string.IsNullOrEmpty(result))
+            {
+                double dinero = Convert.ToDouble(result);
+                txtAhorro = dinero;
+                _user.Ahorro = dinero;
+                await App.Database.SaveUserAsync(_user);
+                await App.Current.MainPage.DisplayAlert("Listo", "Registro Dinero Exitoso", "Aceptar");
+            }
+            else
+            {
+                return;
+            }
         }
         #endregion
 

@@ -20,7 +20,7 @@
         
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" Orientation="Vertical">
             <Label
-                Text="¡Bienvenido a nuestro Sistema Contable!"
+                Text="¡Bienvenido A Tu Agenda Contable!"
                 TextColor="White"
                 FontSize="20"
                 FontAttributes="Bold"

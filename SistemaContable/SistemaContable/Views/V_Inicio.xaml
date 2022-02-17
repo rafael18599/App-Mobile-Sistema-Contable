@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="SistemaContable.ViewModels.V_Inicio"
              NavigationPage.HasNavigationBar="False">
+
     <StackLayout>
         <StackLayout.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
@@ -19,6 +20,7 @@
         <Grid RowSpacing="25">
             <Grid.RowDefinitions>
                 <RowDefinition Height="10"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
@@ -39,7 +41,7 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <StackLayout Grid.Column="0">
+                    <StackLayout Grid.Column="0" BackgroundColor="Transparent">
                         <Image Source="user.png" WidthRequest="40" HorizontalOptions="Start" VerticalOptions="Center"></Image>
                     </StackLayout>
 
@@ -60,22 +62,55 @@
                                 FontSize="25">
                         </Label>
                     </StackLayout>
-
                 </Grid>
-
             </StackLayout>
 
-            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+            <StackLayout Grid.Row="2" BackgroundColor="Transparent">
+                <Frame HasShadow="True" BackgroundColor="Transparent">
+                    <Button
+                            Text="Agregar Mi Dinero Actual"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            BackgroundColor="#362DFD"
+                            WidthRequest="80"
+                            HeightRequest="40"
+                            Margin="-15"
+                            Command="{Binding AgregarDineroCommand}">
+                    </Button>
+                </Frame>
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+                    <Image Source="money.png" WidthRequest="30" Margin="10,0,0,0" BackgroundColor="Transparent"></Image>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                        <Label 
+                           Text="TU DINERO ACTUAL ES : "
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="15"
+                           Margin="5,0,5,0">
+                        </Label>
+                        <Label Text="{Binding txtAhorro}"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="15"
+                           Margin="0">
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center">
                 <Label
                         Text="Selecciona una de nuestras opciones "
                         TextColor="White"
                         FontSize="20"
-                        FontAttributes="Bold">
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center">
                 </Label>
             </StackLayout>
         </Grid>
         <StackLayout BackgroundColor="Transparent" Margin="15">
-            <ScrollView Orientation="Vertical" Padding="0,0,0,0">
+            <ScrollView Orientation="Vertical">
                 <StackLayout HorizontalOptions="CenterAndExpand">
 
                     <StackLayout Orientation="Vertical" BackgroundColor="Transparent" HorizontalOptions="Start">
@@ -142,4 +177,5 @@
             </ScrollView>
         </StackLayout>
     </StackLayout>
+
 </ContentPage>

@@ -1,12 +1,193 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SistemaContable.Views.V_TipoCambio">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SistemaContable.Views.V_TipoCambio"
+             NavigationPage.HasNavigationBar="True"
+             Title="Tipo de Cambio">
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="#2d8cfd"  />
+                    <GradientStop Offset="1" Color="#22c3a1" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label
+                Text="¡Realiza el cálculo del tipo de cambio rápidamente aquí!"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center">                
+            </Label>
         </StackLayout>
-    </ContentPage.Content>
+        
+        <Frame HasShadow="True" BackgroundColor="Transparent" Margin="10">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="Start">
+                    <Image Source="dollar.png" WidthRequest="100" HorizontalOptions="Start"></Image>
+                </StackLayout>
+                
+                <StackLayout HorizontalOptions="Center" BackgroundColor="Transparent" >
+                    <Image Source="transfer.png" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="End">
+                    <Image Source="peruano.png" WidthRequest="100" HorizontalOptions="End"></Image>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="LightBlue" Margin="10" HasShadow="True">
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="Precio del Dolar: "
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           BackgroundColor="Transparent"
+                           TextColor="Black"></Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid RowSpacing="25">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Column="0" Orientation="Horizontal" HorizontalOptions="Center" >
+                            <Label Text="Compra: "
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           BackgroundColor="Transparent"
+                           TextColor="Black"></Label>
+                            <Label Text="S/. 3,95 "
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           BackgroundColor="Transparent"
+                           TextColor="Black"></Label>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="Venta: "
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           BackgroundColor="Transparent"
+                           TextColor="Black"></Label>
+                            <Label Text="S/. 4,00 "
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           BackgroundColor="Transparent"
+                           TextColor="Black"></Label>
+                        </StackLayout>
+                    </Grid>
+
+                    <Frame HasShadow="True">
+                        <StackLayout>
+                            <Grid RowSpacing="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Row="0" BackgroundColor="Transparent">
+                                    <Label Text="De Dolares -> Soles" FontSize="15" TextColor="Black" FontAttributes="Bold"></Label>
+                                </StackLayout>
+
+                                <StackLayout Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center">
+                                    <Frame BackgroundColor="WhiteSmoke" HasShadow="True">
+                                        <StackLayout Orientation="Vertical" BackgroundColor="Transparent">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="Center">
+                                                    <Label Text="Dolares:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="1" Grid.Row="0">
+                                                    <Entry Placeholder="$$$$" Keyboard="Numeric" TextColor="Black" FontSize="12" ></Entry>
+                                                </StackLayout>
+
+                                                <StackLayout Grid.Column="0" Grid.Row="1" VerticalOptions="Center">
+                                                    <Label Text="Soles:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="1" Grid.Row="1">
+                                                    <Entry Placeholder="SSSS" Keyboard="Numeric" TextColor="Black" FontSize="12"></Entry>
+                                                </StackLayout>
+                                            </Grid>
+                                        </StackLayout>
+                                    </Frame>
+                                    
+                                </StackLayout>
+
+                                <StackLayout Grid.Row="2" BackgroundColor="Transparent">
+                                    <Label Text="De Soles -> Dolares" FontSize="15" TextColor="Black" FontAttributes="Bold"></Label>
+                                </StackLayout>
+
+                                <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="Center">
+                                    <Frame BackgroundColor="WhiteSmoke" HasShadow="True">
+                                        <StackLayout Orientation="Vertical" BackgroundColor="Transparent">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <StackLayout Grid.Column="0" Grid.Row="1" VerticalOptions="Center">
+                                                    <Label Text="Dolares:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="1" Grid.Row="1">
+                                                    <Entry Placeholder="$$$$" Keyboard="Numeric" TextColor="Black" FontSize="12" ></Entry>
+                                                </StackLayout>
+
+                                                <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="Center">
+                                                    <Label Text="Soles:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="1" Grid.Row="0">
+                                                    <Entry Placeholder="SSSS" Keyboard="Numeric" TextColor="Black" FontSize="12"></Entry>
+                                                </StackLayout>
+                                            </Grid>
+                                        </StackLayout>
+                                    </Frame>
+
+                                </StackLayout>
+
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                    
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        
+        
+    </StackLayout>
 </ContentPage>

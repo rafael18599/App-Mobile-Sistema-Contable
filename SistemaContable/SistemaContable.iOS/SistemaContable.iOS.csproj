@@ -163,4 +163,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\wallet.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\peruano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\transfer.png" />
+  </ItemGroup>
 </Project>
