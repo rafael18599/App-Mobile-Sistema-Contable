@@ -1,12 +1,96 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SistemaContable.Views.V_Ahorro">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SistemaContable.Views.V_Ahorro"
+             NavigationPage.HasNavigationBar="True"
+             Title="Ahorro">
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0" Color="#2d8cfd"  />
+                    <GradientStop Offset="1" Color="#22c3a1" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+        <Frame HasShadow="False" BackgroundColor="Transparent">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <Label Text="Aquí Puedes Visualizar Tu Meta de Ahorro"
+                   FontSize="20"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center">
+                    </Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source="ahorrar.png" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100"></Image>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Frame Margin="10">
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="¡Recuerda que lo ideal es ahorrar el 10% de tu sueldo!"
+                           FontSize="15"
+                           HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+                <Frame>
+                    
+                    <StackLayout>
+                        <StackLayout Grid.Row="0">
+                            <Label Text="Metas Ahorrativas"
+                                       HorizontalTextAlignment="Center">
+                            </Label>
+                        </StackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            
+                            
+
+                            <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                                <Label Text="Tu Sueldo es: "
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                    >
+                                </Label>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label Text="S/. " HorizontalOptions="End"></Label>
+                                <Label Text="2000" HorizontalOptions="End"></Label>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                                <Label Text="Tu meta de ahorro: "></Label>
+                            </StackLayout>
+
+                            <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label Text="S/. " HorizontalOptions="End"></Label>
+                                <Label Text="2000" HorizontalOptions="End"></Label>
+                            </StackLayout>
+
+                        </Grid>
+                    </StackLayout>
+                    
+                </Frame>
+            </StackLayout>
+        </Frame>
+        
+    </StackLayout>
 </ContentPage>

@@ -181,4 +181,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\exchange02.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ahorrar.png" />
+  </ItemGroup>
 </Project>

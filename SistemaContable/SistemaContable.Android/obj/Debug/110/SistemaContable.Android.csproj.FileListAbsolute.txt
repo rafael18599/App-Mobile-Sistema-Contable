@@ -621,3 +621,4 @@ C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\Sistema
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\bills.png
 C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\exchange02.png
+C:\Users\sistemas03\Desktop\Demo Xamarin\SistemaContable\SistemaContable\SistemaContable.Android\obj\Debug\110\res\drawable\ahorrar.png
