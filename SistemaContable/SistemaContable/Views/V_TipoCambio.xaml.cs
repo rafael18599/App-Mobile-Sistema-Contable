@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SistemaContable.ViewModels;
+using SistemaContable.Models;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace SistemaContable.Views
 {
@@ -16,9 +19,9 @@ namespace SistemaContable.Views
         public V_TipoCambio(Models.User _user)
         {
             InitializeComponent();
-            BindingContext = new VM_TipoCambio(_user);
             var navigationPage = Application.Current.MainPage as NavigationPage;
             navigationPage.BarBackgroundColor = Color.FromRgb(45, 140, 253);
+            BindingContext = new VM_TipoCambio(_user);
         }
     }
 }

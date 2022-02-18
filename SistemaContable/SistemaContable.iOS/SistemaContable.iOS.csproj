@@ -175,4 +175,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\transfer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\exchange02.png" />
+  </ItemGroup>
 </Project>

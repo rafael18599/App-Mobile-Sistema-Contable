@@ -17,7 +17,7 @@
             </LinearGradientBrush>
         </StackLayout.Background>
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
             <Label
                 Text="¡Realiza el cálculo del tipo de cambio rápidamente aquí!"
                 FontSize="20"
@@ -28,14 +28,14 @@
             </Label>
         </StackLayout>
         
-        <Frame HasShadow="True" BackgroundColor="Transparent" Margin="10">
+        <Frame HasShadow="True" BackgroundColor="Transparent" Margin="5">
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                 <StackLayout HorizontalOptions="Start">
-                    <Image Source="dollar.png" WidthRequest="100" HorizontalOptions="Start"></Image>
+                    <Image Source="bills.png" WidthRequest="100" HorizontalOptions="Start"></Image>
                 </StackLayout>
                 
                 <StackLayout HorizontalOptions="Center" BackgroundColor="Transparent" >
-                    <Image Source="transfer.png" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+                    <Image Source="exchange02.png" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center"></Image>
                 </StackLayout>
 
                 <StackLayout HorizontalOptions="End">
@@ -71,7 +71,7 @@
                            FontAttributes="Bold"
                            BackgroundColor="Transparent"
                            TextColor="Black"></Label>
-                            <Label Text="S/. 3,95 "
+                            <Label Text="{Binding Casa.compra, Mode=TwoWay}"
                            FontSize="15"
                            FontAttributes="Bold"
                            BackgroundColor="Transparent"
@@ -84,7 +84,7 @@
                            FontAttributes="Bold"
                            BackgroundColor="Transparent"
                            TextColor="Black"></Label>
-                            <Label Text="S/. 4,00 "
+                            <Label Text="{Binding Casa.venta, Mode=TwoWay}"
                            FontSize="15"
                            FontAttributes="Bold"
                            BackgroundColor="Transparent"
@@ -122,20 +122,25 @@
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*"/>
                                                     <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
                                                 </Grid.ColumnDefinitions>
 
                                                 <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="Center">
                                                     <Label Text="Dolares:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
                                                 </StackLayout>
                                                 <StackLayout Grid.Column="1" Grid.Row="0">
-                                                    <Entry Placeholder="$$$$" Keyboard="Numeric" TextColor="Black" FontSize="12" ></Entry>
+                                                    <Entry Placeholder="$$$$" Keyboard="Numeric" TextColor="Black" FontSize="12" Text="{Binding txtDolaresSoles , Mode=TwoWay}"></Entry>
+                                                </StackLayout>
+                                                
+                                                <StackLayout Grid.Column="2" Grid.Row="0">
+                                                    <Button Text="OK" BackgroundColor="LightBlue" Command="{Binding DolaresSolesCommand}"></Button>
                                                 </StackLayout>
 
                                                 <StackLayout Grid.Column="0" Grid.Row="1" VerticalOptions="Center">
                                                     <Label Text="Soles:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
                                                 </StackLayout>
                                                 <StackLayout Grid.Column="1" Grid.Row="1">
-                                                    <Entry Placeholder="SSSS" Keyboard="Numeric" TextColor="Black" FontSize="12"></Entry>
+                                                    <Entry Placeholder="SSSS" Keyboard="Numeric" TextColor="Black" FontSize="12" IsEnabled="False" Text="{Binding txtSolesResultado}"></Entry>
                                                 </StackLayout>
                                             </Grid>
                                         </StackLayout>
@@ -159,20 +164,24 @@
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*"/>
                                                     <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
                                                 </Grid.ColumnDefinitions>
 
                                                 <StackLayout Grid.Column="0" Grid.Row="1" VerticalOptions="Center">
-                                                    <Label Text="Dolares:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
+                                                    <Label Text="Dolares:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black" ></Label>
                                                 </StackLayout>
                                                 <StackLayout Grid.Column="1" Grid.Row="1">
-                                                    <Entry Placeholder="$$$$" Keyboard="Numeric" TextColor="Black" FontSize="12" ></Entry>
+                                                    <Entry Placeholder="$$$$" Keyboard="Numeric" TextColor="Black" FontSize="12" IsEnabled="False" Text="{Binding txtDolaresResultado}"></Entry>
                                                 </StackLayout>
-
+                                                <StackLayout Grid.Column="2" Grid.Row="0">
+                                                    <Button Text="OK" BackgroundColor="LightBlue" Command="{Binding SolesDolaresCommand}"></Button>
+                                                </StackLayout>
+                                                
                                                 <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="Center">
                                                     <Label Text="Soles:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="18" TextColor="Black"></Label>
                                                 </StackLayout>
                                                 <StackLayout Grid.Column="1" Grid.Row="0">
-                                                    <Entry Placeholder="SSSS" Keyboard="Numeric" TextColor="Black" FontSize="12"></Entry>
+                                                    <Entry Placeholder="SSSS" Keyboard="Numeric" TextColor="Black" FontSize="12" Text="{Binding txtSolesDolares , Mode=TwoWay}"></Entry>
                                                 </StackLayout>
                                             </Grid>
                                         </StackLayout>

@@ -8,6 +8,7 @@ public class MonoPackageManager_Resources {
 		"GalaSoft.MvvmLight.dll",
 		"GalaSoft.MvvmLight.Extras.dll",
 		"GalaSoft.MvvmLight.Platform.dll",
+		"Newtonsoft.Json.dll",
 		"SistemaContable.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
